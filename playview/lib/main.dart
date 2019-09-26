@@ -67,19 +67,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Expanded(flex: 1, child: SizedBox()),
                   Expanded(
-                      flex: 2,
-                      child: Container(
-                          child: new ClipOval(
-                            child: new Image.asset('images/bg.jpg'),
-                          ),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                    color: themeColor.withOpacity(0.4),
-                                    blurRadius: 12.0)
-                              ]))),
+                      flex: 8,
+                      child: Center(
+                          child: Stack(children: <Widget>[
+                        Image.asset('images/discplus.png'),
+                        Container(
+                            margin: EdgeInsets.all(40),
+                            child: ClipOval(
+                              child: Image.asset('images/bg.jpg'),
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.transparent,
+                                shape: BoxShape.circle,
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: themeColor.withOpacity(0.4),
+                                      blurRadius: 8.0)
+                                ]))
+                      ]))),
                   Expanded(flex: 1, child: SizedBox())
                 ],
               )),
@@ -89,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Text("邓紫棋",
                   style: TextStyle(
                       color: themeTextColor.withOpacity(0.5), fontSize: 18)),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -121,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {})
                 ],
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
 
               ///喜欢 - 下载 - 评论 - 更多
               Row(children: <Widget>[
@@ -164,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(color: themeTextColor.withOpacity(0.75))),
                 SizedBox(width: 30)
               ]),
-              SizedBox(height: 24),
+              SizedBox(height: 10),
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
@@ -198,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: themeTextColor.withOpacity(0.75)),
                         onPressed: () {})
                   ]),
-              SizedBox(height: 40)
+              SizedBox(height: 30)
             ])));
   }
 }
