@@ -1,10 +1,9 @@
-# SpeedStar
-一款Flutter 开发的测速软件。
+# PlayView
+Flutter 开发的播放页面
 
 
 功能
-1.测速
-2.网络畅通测试
+任务栏全白字体黑色
 
 
-学习flutter 布局和网络访问
+学习flutter 布局
