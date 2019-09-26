@@ -67,9 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Expanded(flex: 1, child: SizedBox()),
                   Expanded(
-                      flex: 4,
+                      flex: 2,
                       child: Container(
-                          margin: EdgeInsets.all(10),
                           child: new ClipOval(
                             child: new Image.asset('images/bg.jpg'),
                           ),
@@ -79,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               boxShadow: [
                                 BoxShadow(
                                     color: themeColor.withOpacity(0.4),
-                                    blurRadius: 10.0)
+                                    blurRadius: 12.0)
                               ]))),
                   Expanded(flex: 1, child: SizedBox())
                 ],
