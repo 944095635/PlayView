@@ -8,5 +8,4 @@ Flutter 开发的播放页面
 
 学习flutter 布局
 
-
-<img src="https://raw.githubusercontent.com/944095635/PlayView/master/Screenshot.png" align="center" width="310">
+<img src="https://raw.githubusercontent.com/944095635/PlayView/master/Screenshot.jpg" align="center" width="310">
